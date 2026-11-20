@@ -1,1 +1,1 @@
-
+Abrorbek Saidov A85204925029 BsIT AI
