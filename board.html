@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Marks Board</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="card board-card">
+    <header class="board-header">
+      <div>
+        <h1 id="welcome">Welcome</h1>
+        <p id="load-time" class="status"></p>
+      </div>
+      <button id="back-button" type="button">Back</button>
+    </header>
+
+    <div class="sort-control">
+      <label for="sort-students">Sort students</label>
+      <select id="sort-students" name="sortStudents">
+        <option value="name">Name A–Z</option>
+        <option value="marks">Marks highest first</option>
+      </select>
+    </div>
+
+    <p id="board-message" class="error-message" role="alert" hidden></p>
+
+    <div class="table-wrapper">
+      <table>
+        <caption>Student marks</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Marks</th>
+            <th scope="col">City</th>
+            <th scope="col">Grade</th>
+          </tr>
+        </thead>
+        <tbody id="students-body"></tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

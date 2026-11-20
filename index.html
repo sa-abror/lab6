@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <h1>Student Registration</h1>
+    <p class="intro">Register to open the student marks board.</p>
+
+    <form id="registration-form" novalidate>
+      <div class="field">
+        <label for="full-name">Full name</label>
+        <input id="full-name" name="fullName" type="text" maxlength="25" autocomplete="name">
+        <small id="name-counter" aria-live="polite">25 characters left</small>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email">
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" aria-describedby="phone-help">
+        <small id="phone-help">Enter exactly 9 digits.</small>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="new-password" aria-describedby="password-help">
+        <small id="password-help">Use at least 7 characters.</small>
+      </div>
+
+      <div class="field">
+        <label for="confirm-password">Confirm password</label>
+        <input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password">
+      </div>
+
+      <div class="field">
+        <label for="city">City</label>
+        <select id="city" name="city">
+          <option value="">Select a city</option>
+          <option value="Tashkent">Tashkent</option>
+          <option value="Samarkand">Samarkand</option>
+          <option value="Bukhara">Bukhara</option>
+          <option value="Andijan">Andijan</option>
+          <option value="Namangan">Namangan</option>
+        </select>
+        <p id="city-choice" class="status" aria-live="polite">Choose your city.</p>
+      </div>
+
+      <div id="error-box" class="error-box" role="alert" hidden>
+        <p>Please correct the following:</p>
+        <ul id="error-list"></ul>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </main>
+</body>
+</html>
