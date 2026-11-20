@@ -1,4 +1,3 @@
-// Enrolment number: A85204925029 — started 20 November 2026
 
 const PASSWORD_MIN_LENGTH = 7;
 const NAME_MAX_LENGTH = 25;
